@@ -1,0 +1,27 @@
+from django.conf.urls import patterns, include, url
+from adnetwork.views import hello
+from signup.views import p_signup, signup, login, p_login
+from adnetwork.views import home
+# Uncomment the next two lines to enable the admin:
+# from django.contrib import admin
+# admin.autodiscover()
+
+urlpatterns = patterns('',
+    # Examples:
+    # url(r'^$', 'adnetwork.views.home', name='home'),
+    # url(r'^adnetwork/', include('adnetwork.foo.urls')),
+
+    # Uncomment the admin/doc line below to enable admin documentation:
+    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+
+    # Uncomment the next line to enable the admin:
+    # url(r'^admin/', include(admin.site.urls)),
+	url(r'^p_signup/$',p_signup),
+	url(r'^signup/$',signup),
+	url(r'^p_login/$',p_login),
+	url(r'^login/$',login),
+	url(r'^home/$',home),
+	url(r'^$',home),
+
+	
+)

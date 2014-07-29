@@ -1,0 +1,37 @@
+{%extends 'base_home.html'%}
+
+{% block content %}
+
+	<!-----------------login--------------->
+	<div id="login" class="container-fluid">
+		<div class="row-fluid">
+			<div class="span1"></div>
+			<div class="span10">
+				    <form method="post" action="/p_login/">
+						<fieldset>
+						<legend class="text-info">Login</legend>
+						<span class="help-block" id="login-err"></span>
+						<label class="text-info">Username</label>
+						<input type="text" name="username" placeholder="Usrname">
+						<label class="text-info">Password</label>
+						<input type="password" name="password" placeholder="Password"><br>
+						<label>Login As</label>
+						<label class="radio inline">
+							<input type="radio" name="utype" id="optionsRadios1" value="publisher">
+							Publisher
+						</label>
+						<label class="radio inline">
+							<input type="radio" name="utype" id="optionsRadios2" value="advertiser">
+							Advertiser
+						</label>
+						<br><br>
+						<input type="submit" value="Submit" class="btn btn-primary">
+						</fieldset>
+						</form>	
+			</div>
+		</div>
+		<p class="text-right text-info">&copy; 2013 MyMedia Inc.</p>
+	</div>
+	<!-----------------login--------------->
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> {{title}} | MyMedia Inc.</title>
+	<link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet" media="screen">
+	<link href="{% static 'css/main.css'%}" rel="stylesheet" media="screen">
+	
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+	
+	
+</head>
+
+<body>
+
+
+	<div class="row" id="title">
+		<div class="span4 offset1"><img src="{% static 'images/logo.png' %}" /></div>
+	</div>
+{% include 'nav.html'%}
+{% block content %}
+{% endblock %}
+
+
+
+
+	
+</body>
+
+</html>

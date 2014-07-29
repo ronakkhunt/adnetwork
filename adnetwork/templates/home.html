@@ -1,0 +1,61 @@
+{%extends 'base_home.html'%}
+{% load static %}
+{% block content %}
+
+	<!----------------- home--------------->
+	
+	<div id="home" class="container-fluid">
+		<div class="row-fluid">
+			<div class="span1"></div>
+			<div class="span10">
+				    <div id="home1"class="container-fluid">
+					<div class="row-fluid">
+					<div class="span6">
+					<h2 class="muted">Advertisers</h2>
+					<p>MyMedia.com is the latest, up to date technology system with 24/7 support monitoring and smart algorithms that analyze every click and displayed impression to ensure a high quality of traffic from our Publishers' websites to our Advertisers' campaigns. Our System automatically filters any invalid clicks or fraudulent / fake traffic with our high end IP geo location, contextual checking and secure solutions. 
+					</p>
+					</div>
+					<div class="span5">
+					<img src={% static 'images/img1.gif' %}>
+					</div>
+					</div>
+					</div>
+		
+					<div id="home2" class="container-fluid">
+					<div class="row-fluid">
+					<div class="span6">
+					<h2 class="muted">Publishers</h2>
+					<p>MyMedia.com is the best advertising PPC network, sharing 90 % of profits with our Publishers. Our complex algorithms that mix contextual targeting ads with the perfect look of the ads leading to higher conversions than any other network. After years of testing we are now offering the system to wide range of partners and any website owners that want to grow their website monetization.
+					</p>
+					</div>
+					<div class="span5">
+					<img src={% static 'images/img2.gif' %}>
+					</div>
+					</div>
+					</div>					
+			</div>
+		</div>
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span5 offset1">
+					<h3 class="muted">Become Advertiser</h3>
+					<p>MyMedia.com is the solution for thousands of Advertisers around the globe. Our contextual ads PPC network is the choice of the WEB 2.0 generation.
+					</p><br>
+					<a href="/signup/" class="btn btn-primary text-right" >Advertiser Sign Up</a>
+				</div>
+				<div class="span5">
+					<h3 class="muted">Become Publisher</h3>
+					<p>MyMedia.com has beco me the number one choice for any Publisher who has tried our system. Our network supplies the best up to date solutions for monetizing. SIGN UP TODAY & GET PAID UP TO 70 %
+					</p>
+					<a href="/signup/" class="btn btn-primary text-right" >Publlisher Sign Up</a>
+				</div>
+			</div>
+		</div>
+					<p class="text-right text-info">&copy; 2013 MyMedia Inc.</p>
+		
+		
+	</div>
+	<!----------------- home--------------->
+{% endblock %}
